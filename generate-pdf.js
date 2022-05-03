@@ -21,7 +21,7 @@ async function print() {
   });
   await browser.close();
   console.log('Generating the resume of PDF version...');
-  fs.writeFile('./.output/public/resume.pdf', pdf, () =>
+  fs.writeFile('.output/public/resume.pdf', pdf, () =>
     console.log('The Resume of PDF version generated successful')
   );
 }

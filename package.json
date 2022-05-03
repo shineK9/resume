@@ -1,11 +1,10 @@
 {
   "private": true,
   "scripts": {
-    "build": "nuxt build",
+    "build": "node ./build.mjs",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "deploy": "node ./deploy.mjs"
+    "preview": "nuxt preview"
   },
   "devDependencies": {
     "@unocss/nuxt": "^0.32.9",

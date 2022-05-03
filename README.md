@@ -20,7 +20,7 @@ npm run build
 // or
 yarn build
 ```
-4. 部署
+4. 预览
 ```
-yarn deploy
+yarn preview
 ```

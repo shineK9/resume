@@ -16,15 +16,16 @@ function print() {
 }
 </script>
 <template>
-  <main font-serif w-200 m-auto my-15>
+  <main font-serif lg:w-200 m-auto my-15>
     <div text-center>
       <h1 m-0>
         {{ personal_info.name }}
       </h1>
       <p text-slate-500 m-0 text-sm>{{ personal_info.position }}</p>
-      <address>
+      <address flex flex-col>
         <span
           mx-3
+          my-1
           v-for="[label, contact] in Object.entries(personal_info.contacts)"
           :key="label"
         >
@@ -59,7 +60,7 @@ function print() {
     </div>
     <h3 inline-block border-b-3>技术栈</h3>
     <div flex flew-row flex-wrap>
-      <ul my-1 w-35 v-for="stk in stack" :key="stk.key">
+      <ul my-1 w-30 sm:w-35 v-for="stk in stack" :key="stk.key">
         <div style="margin-left: -30px" text-lg>{{ stk.label }}</div>
         <li my-1 text-slate-500 v-for="i in stk.items" :key="i">
           {{ i || 'todo...' }}
@@ -71,7 +72,7 @@ function print() {
       {{ i || 'todo...' }}
     </p>
     <p text-center mt-15>
-      <a text-slate-500 href="#" @click="print"> PDF 版本 </a>
+      <a lg:block hidden text-slate-500 href="#" @click="print"> PDF 版本 </a>
     </p>
   </main>
 </template>

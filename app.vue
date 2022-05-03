@@ -2,13 +2,17 @@
 import resume from './resume.json';
 const { online_url, personal_info, work_experience, abilities, about, stack } =
   resume;
-const app = useNuxtApp();
-app.ssrContext;
-const fromRobot = ref<boolean>(false);
-try {
-  fromRobot.value = window.navigator.userAgent === 'puppeteer';
-} catch {
-  fromRobot.value = false;
+
+function print() {
+  try {
+    // 生产环境下访问 process 会报错
+    if (process.dev) {
+      return;
+    }
+    window.print();
+  } catch {
+    // do nothing
+  }
 }
 </script>
 <template>
@@ -67,9 +71,7 @@ try {
       {{ i || 'todo...' }}
     </p>
     <p text-center mt-15>
-      <a text-slate-500 :href="fromRobot ? online_url : '/resume.pdf'">
-        访问 {{ fromRobot ? '在线版本' : 'PDF 版本' }}
-      </a>
+      <a text-slate-500 href="#" @click="print"> PDF 版本 </a>
     </p>
   </main>
 </template>

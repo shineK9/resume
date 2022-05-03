@@ -8,6 +8,8 @@ const opt = {
   stderr: 'inherit',
 };
 
+console.log('ENV:', process.env.API_URL)
+
 async function run() {
   const build = spawn('nuxi build', { shell: true });
   build.on('error', (e) => console.log(e.message));

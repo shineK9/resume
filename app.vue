@@ -1,9 +1,18 @@
 <script lang="ts" setup>
 import resume from './resume.json';
-const { personal_info, work_experience, abilities, about, stack } = resume;
+const { online_url, personal_info, work_experience, abilities, about, stack } =
+  resume;
+const app = useNuxtApp();
+app.ssrContext;
+const fromRobot = ref<boolean>(false);
+try {
+  fromRobot.value = window.navigator.userAgent === 'puppeteer';
+} catch {
+  fromRobot.value = false;
+}
 </script>
 <template>
-  <main font-serif w-200 m-auto my-10>
+  <main font-serif w-200 m-auto my-15>
     <div text-center>
       <h1 m-0>
         {{ personal_info.name }}
@@ -48,14 +57,19 @@ const { personal_info, work_experience, abilities, about, stack } = resume;
     <div flex flew-row flex-wrap>
       <ul my-1 w-35 v-for="stk in stack" :key="stk.key">
         <div style="margin-left: -30px" text-lg>{{ stk.label }}</div>
-        <li text-slate-400 v-for="i in stk.items" :key="i">
+        <li my-1 text-slate-500 v-for="i in stk.items" :key="i">
           {{ i || 'todo...' }}
         </li>
       </ul>
     </div>
-    <h3 inline-block border-b-3>关于我</h3>
+    <h3 mt-10 inline-block border-b-3>关于我</h3>
     <p v-for="i in about" :key="i">
       {{ i || 'todo...' }}
+    </p>
+    <p text-center mt-15>
+      <a text-slate-500 :href="fromRobot ? online_url : '/resume.pdf'">
+        访问 {{ fromRobot ? '在线版本' : 'PDF 版本' }}
+      </a>
     </p>
   </main>
 </template>

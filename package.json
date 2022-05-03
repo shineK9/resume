@@ -4,10 +4,14 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "nuxt preview"
+    "preview": "nuxt preview",
+    "deploy": "node ./deploy.mjs"
   },
   "devDependencies": {
     "@unocss/nuxt": "^0.32.9",
-    "nuxt": "3.0.0-rc.1"
+    "execa": "^6.1.0",
+    "nuxt": "3.0.0-rc.1",
+    "puppeteer": "^13.7.0",
+    "tcp-port-used": "^1.0.2"
   }
 }

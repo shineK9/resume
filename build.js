@@ -8,7 +8,7 @@ const opt = {
   stderr: 'inherit',
 };
 
-console.log('ENV:', process.env)
+console.log('ENV:', process.env);
 
 async function run() {
   const build = spawn('nuxi build', { shell: true });
@@ -17,7 +17,15 @@ async function run() {
   build.stderr.on('data', (e) => console.log(e.toString()));
 
   build.on('exit', () => {
-    const server = spawn('nuxi preview', { shell: true });
+    const server = spawn(
+      'node',
+      [
+        process.env.VERCEL_GIT_COMMIT_AUTHOR_NAME
+          ? '.vercel_build_output/functions/node/server/index.mjs'
+          : '.output/server/index.mjs',
+      ],
+      { shell: true }
+    );
     const pdfGen = spawn('node ./generate-pdf.js', { shell: true });
 
     server.stdout.on('data', (e) => console.log(e.toString()));

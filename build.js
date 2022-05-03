@@ -8,7 +8,7 @@ const opt = {
   stderr: 'inherit',
 };
 
-console.log('ENV:', process.env.API_URL)
+console.log('ENV:', process.env)
 
 async function run() {
   const build = spawn('nuxi build', { shell: true });

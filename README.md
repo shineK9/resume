@@ -1,42 +1,26 @@
-# Nuxt 3 Minimal Starter
+# Resume
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+根据 [JSON 数据](./resume.json) 生成个人简历，打包时自动会同时生成 PDF 和网页两个版本。
 
-## Setup
+可访问 [Vercel 部署版本](http://shinek.vercel.app) 查看最终效果
 
-Make sure to install the dependencies:
+使用步骤: 
 
-```bash
-# yarn
-yarn install
+1. 编辑 `resume.json` 文件配置你的简历信息
 
-# npm
+2. 执行下面脚本安装依赖
+```
 npm install
-
-# pnpm
-pnpm install --shamefully-hoist
+// or
+yarn install
 ```
-
-## Development Server
-
-Start the development server on http://localhost:3000
-
-```bash
-npm run dev
+3. 打包
 ```
-
-## Production
-
-Build the application for production:
-
-```bash
 npm run build
+// or
+yarn build
 ```
-
-Locally preview production build:
-
-```bash
-npm run preview
+4. 部署
 ```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment) for more information.
+yarn deploy
+```

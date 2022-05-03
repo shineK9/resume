@@ -1,14 +1,12 @@
-import puppeteer from 'puppeteer';
-import fs from 'fs';
-import tcpPortUsed from 'tcp-port-used';
+const puppeteer = require('puppeteer');
+const fs = require('fs');
+const tcpPortUsed = require('tcp-port-used');
 
 async function print() {
   const browser = await puppeteer.launch();
 
   const page = await browser.newPage();
-  await page.setUserAgent(
-    'puppeteer'
-  );
+  await page.setUserAgent('puppeteer');
   await page.goto('http://localhost:3000');
   const pdf = await page.pdf({
     format: 'A4',

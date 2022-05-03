@@ -9,13 +9,13 @@ const opt = {
 };
 
 async function run() {
-  const build = spawn('nuxt', ['build'], { shell: true });
+  const build = spawn('nuxt build', { shell: true });
   build.on('error', (e) => console.log(e.message));
   build.stdout.on('data', (e) => console.log(e.toString()));
   build.stderr.on('data', (e) => console.log(e.toString()));
 
   build.on('exit', () => {
-    const server = spawn('node ./.output/server/index.mjs', { shell: true });
+    const server = spawn('nuxt preview', { shell: true });
     const pdfGen = spawn('node ./generate-pdf.js', { shell: true });
 
     server.stdout.on('data', (e) => console.log(e.toString()));

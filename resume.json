@@ -1,89 +1,94 @@
 {
-  "online_url": "http://shinek.vercel.app",
-  "personal_info": {
-    "name": "申康",
-    "position": "前端工程师",
-    "expect_salary": [20],
-    "status": "随时就职",
-    "contacts": {
-      "phone": "15897489715",
-      "email": "1029174296@qq.com"
-    }
-  },
-  "work_experience": [
-    {
-      "company": {
-        "name": "爱普伦科技有限公司",
-        "description": "一家专注于国际物流软件的公司，服务于多家中小型物流企业，为其提供物流信息化平台以及技术支持。"
-      },
-      "date": ["2020/5", "至今"],
-      "position": "前端工程师",
-      "responsibility": "重构公司物流平台，使用现代化的前端技术栈替换原有架构，让系统具有更高的稳定性和扩展性。",
-      "works": [
-        "将原有的单体应用按模块拆分迁移到 Monorepo（多库）架构，各模块例如：订单、财务、组织都拥有自己独立的代码仓库，主应用通过基于 Qiankun 的 MicroApp 框架去加载其它模块，使模块之间的耦合变低，业务逻辑更加清晰，方便扩展。",
-        "使用 Typescript 重构了整个前端项目，将安全的类型系统覆盖了 100% 的业务代码，提高的系统的稳定性，代码的可阅读和扩展性。",
-        ""
-      ]
+    "online_url": "http://shinek.vercel.app",
+    "personal_info": {
+        "name": "申康",
+        "position": "前端工程师",
+        "expect_salary": [20],
+        "status": "随时就职",
+        "contacts": {
+            "phone": "15897489715",
+            "email": "1029174296@qq.com"
+        }
     },
-    {
-      "company": {
-        "name": "讯鹏科技有限公司",
-        "description": ""
-      },
-      "date": ["2019/11", "2020/6"],
-      "position": "软件工程师",
-      "responsibility": "维护及扩展公司内部 MES 系统，对接公司业务和硬件部门，将公司工作流信息化到 MES 系统；对接公司硬件部门，编写上位机控制软件。",
-      "works": ["", ""]
-    }
-  ],
-  "abilities": [
-    "熟练掌握 JavaScript 语言，关注 ECMA 最新动态，能编写友好可维护的业务代码。",
-    "熟悉 Vue/React 技术栈，有一定的技术视野，能够根据业务需求选择合适的技术框架。",
-    "熟悉前端工程化，能构建基于 Vite/Webpack 的前端开发环境，集成自动化 CI 和单元测试。",
-    "熟悉 .NET 平台上的技术，能用 C# 语言开发后端 Web 服务，或者 WPF 桌面应用。",
-    "了解 SQL Server 数据库，可编写复杂业务的 SQL 语句。"
-  ],
-  "stack": [
-    {
-      "key": "Language",
-      "label": "Languages",
-      "items": ["JavaScript", "TypeScript", "C#", "Rust"]
-    },
-    {
-      "key": "vue",
-      "label": "Vue Stack",
-      "items": ["vue-router", "vue-i18n", "vuex", "NuxtJs"]
-    },
-    {
-      "key": "CSS",
-      "label": "CSS",
-      "items": ["Sass", "UnoCSS", "TailWindCSS"]
-    },
-    {
-      "key": "UI",
-      "label": "UI Framework",
-      "items": ["ElementUI", "AntDesign"]
-    },
-    {
-      "key": "Build",
-      "label": "Build Tools",
-      "items": ["Webpack", "Vite"]
-    },
-    {
-      "key": "Database",
-      "label": "Database",
-      "items": ["SQLServer", "MySQL"]
-    },
-    {
-      "key": "devops",
-      "label": "Devops",
-      "items": ["Docker", "Vercel"]
-    }
-  ],
-  "about": [
-    "我是一名软件工程师，毕业后一直从事偏前端方向的软件开发工作。根据不同的业务需求，我写过桌面端 App、小程序，也写过网页。现在主要从事 web 开发相关的工作。",
-    "我热爱编程，平时喜欢学习一些新技术来扩充自己的技术视野，每次学习到好的东西，我就会尝试运用到我的工作当中，帮助我更高效的写出好的业务代码，这是我工作上一直在追寻的东西。",
-    "工作之外，我喜欢看电影/动漫，欣赏一部好的作品会让我感觉心情舒畅，能学习到很多平时见不到的东西。我还喜欢户外运动，比如：爬山、徒步，既能欣赏到美丽的自然风景，还锻炼自己的体魄。"
-  ],
-  "posts": ["", "", ""]
+    "work_experience": [
+        {
+            "company": {
+                "name": "爱普伦科技有限公司",
+                "description": "一家专注于国际物流软件的公司，服务于多家中小型物流企业，为其提供物流信息化平台以及技术支持。"
+            },
+            "date": ["2020/5", "至今"],
+            "position": "前端工程师",
+            "responsibility": "重构公司物流平台，使用现代化的前端技术栈替换原有架构，让系统具有更高的稳定性和扩展性。",
+            "works": [
+                "将原有的单体应用按模块拆分迁移到 Monorepo（多库）架构，各模块例如：订单、财务、组织都拥有自己独立的代码仓库，主应用通过基于 Qiankun 的 MicroApp 框架去加载其它模块，使模块之间的耦合变低，业务逻辑更加清晰，方便扩展。",
+                "使用 Typescript 重构了整个前端项目，将安全的类型系统覆盖了 100% 的业务代码，提高的系统的稳定性，代码的可阅读和扩展性。",
+                "开发维护前端基础设施库，包括：通用业务组件、报表解析，服务于公司数十个前端页面。"
+            ]
+        },
+        {
+            "company": {
+                "name": "讯鹏科技有限公司",
+                "description": ""
+            },
+            "date": ["2019/11", "2020/6"],
+            "position": "软件工程师",
+            "responsibility": "维护及扩展公司内部 MES 系统，对接公司业务和硬件部门，将公司工作流信息化到 MES 系统；对接公司硬件部门，编写上位机控制软件。",
+            "works": [
+                "编写了数款上位机控制软件,服务于多条工厂生产线，为其提供生产数据信息化。",
+                "为 MES 系统集成无纸化作业功能，实现了基于 Aspose.NET 的文档解析及预览。可自动分发数字化文档到工厂各个流水线，供工人阅读参考，减少工厂纸质文档带来的浪费。",
+                "使用 SQL + WPF 编写了数十个复杂报表，为公司业务和技术部门提供了数据参考。"
+            ]
+        }
+    ],
+    "abilities": [
+        "熟练掌握 JavaScript 语言，关注 ECMA 最新动态，能编写可维护、可扩展的业务代码。",
+        "熟悉 Vue 框架，了解其底层实现，能合理的应用 Vue 提供的特性编写通用组件。",
+        "熟悉 Vue/React 技术栈，有一定的技术视野，能够根据业务需求选择合适的技术框架。",
+        "熟悉前端工程化，能构建基于 Vite/Webpack 的前端开发环境，集成自动化 CI 和单元测试。",
+        "熟悉 .NET 平台上的技术，能用 C# 语言开发后端 Web 服务，或者 WPF 桌面应用。",
+        "了解 SQL Server 数据库，可编写复杂业务的 SQL 语句。"
+    ],
+    "stack": [
+        {
+            "key": "Language",
+            "label": "Languages",
+            "items": ["JavaScript", "TypeScript", "C#", "Rust"]
+        },
+        {
+            "key": "vue",
+            "label": "Vue Stack",
+            "items": ["vue-router", "vue-i18n", "vuex", "NuxtJs"]
+        },
+        {
+            "key": "CSS",
+            "label": "CSS",
+            "items": ["Sass", "UnoCSS", "TailWindCSS"]
+        },
+        {
+            "key": "UI",
+            "label": "UI Framework",
+            "items": ["ElementUI", "AntDesign"]
+        },
+        {
+            "key": "Build",
+            "label": "Build Tools",
+            "items": ["Webpack", "Vite"]
+        },
+        {
+            "key": "Database",
+            "label": "Database",
+            "items": ["SQLServer", "MySQL"]
+        },
+        {
+            "key": "devops",
+            "label": "Devops",
+            "items": ["Docker", "Vercel"]
+        }
+    ],
+    "about": [
+        "我是一名软件工程师，毕业后一直从事偏前端方向的软件开发工作。根据业务需求的不同，我写过桌面端 App、小程序，以及网页。现在主要从事 web 开发相关的工作。",
+        "我热爱编程，平时喜欢学习新技术扩充自己的视野。每次学习到好的东西，我就会尝试运用到我的工作当中，帮助我更高效的写出好的业务代码。",
+        "工作之外，我喜欢看电影/动漫，欣赏一部好的作品会让我感觉心情舒畅，能学习到很多平时见不到的东西。我还喜欢户外运动，比如：爬山、徒步，既能欣赏到美丽的自然风景，还锻炼自己的体魄。"
+    ],
+    "posts": ["", "", ""]
 }

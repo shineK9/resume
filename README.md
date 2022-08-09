@@ -2,7 +2,7 @@
 
 根据 [JSON 数据](./resume.json) 生成个人简历，打包时自动会同时生成 PDF 和网页两个版本。
 
-可访问 [Vercel 部署版本](http://shinek.vercel.app) 查看最终效果
+可访问 [Vercel 部署版本](http://shenkang.vercel.app) 查看最终效果
 
 使用步骤: 
 

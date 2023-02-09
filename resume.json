@@ -20,14 +20,15 @@
       "date": ["2020/5", "至今"],
       "position": "前端工程师",
       "responsibilities": [
-        "将原来相对老旧的系统架构（基于 asp.net 的单体 MVC 架构）迁移重构到现代化的前端架构（基于 Monorepo 的微前端架构）。",
-        "参与公司需求设计和讨论，开发了系统的报价、财务模块。"
+        "将原来相对老旧的系统架构（基于 ASP.NET 的单体 MVC 架构）迁移重构到现代化的前端架构（基于 Monorepo 的微前端架构）。参与公司需求设计和讨论，开发了快递报价、财务模块。"
       ],
       "works": [
         "按照领域边界将原来的单体应用拆分成多个独立的包，通过 Monorepo 进行统一管理，借助微应用框架 Qiankun 将它们组合成完整的项目。以此达到了前端项目高内聚、低耦合的目的，提高了系统的可维护性、可拓展性。",
         "使用 TypeScript 为所有的业务基础库（网络请求，多语言，授权等）添加了安全的类型系统，使得业务代码的类型系统覆盖率达到了 100%，提高的系统的稳定性，代码的可阅读和扩展性。",
-        "封装维护了公司业务基础组件库，包括数据选择器，价格表解析。",
-        "借助 vue + ant-design 组件库开发了完整的财务和报价模块，为系统上线了快递查价、在线支付、在线账单等功能。"
+        "借助 vue + ant-design 组件库开发了完整的财务和报价模块，为系统 web 端上线了快递查价、在线支付、在线账单等功能。",
+        "设计基于配置式的复杂 Excel 表单解析，实现了根据配置字段识别数据内容的算法。",
+        "实现了多方式系统登录，如基于 Token 的账号密码登录、微信扫码登录。",
+        "封装维护了公司业务基础组件库，包括数据选择器，价格表解析。"
       ]
     },
     {
@@ -50,7 +51,7 @@
   ],
   "abilities": [
     "熟悉 JavaScript/TypeScript 编程语言，能熟练运用其特性编写健壮的业务代码和基础库。",
-    "熟悉 VueJS，了解其底层实现，能合理的应用其提供的特性编写业务和通用组件。",
+    "熟悉 VueJS，了解其底层实现，能合理的使用基于 Composable API 或者 Options API 的开发模式及特性编写业务和通用组件。",
     "熟悉 Vue/React 技术栈，有一定的技术视野，能够根据业务需求选择合适的技术框架。",
     "熟悉前端工程化，能构建基于 Vite/Webpack/Rollup 的前端开发环境。",
     "熟悉 .NET 平台技术，能用 C# 语言开发后端 Web 服务，或者 WPF 桌面应用。",
@@ -65,12 +66,7 @@
     {
       "key": "Vue",
       "label": "Vue Stack",
-      "items": ["vue-router", "vue-i18n", "vuex", "NuxtJs"]
-    },
-    {
-      "key": "CSS",
-      "label": "CSS",
-      "items": ["Sass", "UnoCSS", "TailWindCSS"]
+      "items": ["vue-router", "vue-i18n", "vuex/pinia", "NuxtJs"]
     },
     {
       "key": "UI",
@@ -78,9 +74,14 @@
       "items": ["ElementUI", "AntDesign", "ViewDesign"]
     },
     {
+      "key": "CSS",
+      "label": "CSS",
+      "items": ["Sass", "UnoCSS", "TailWindCSS"]
+    },
+    {
       "key": "Build",
       "label": "Build Tools",
-      "items": ["Webpack", "Vite"]
+      "items": ["Webpack", "Vite", "Rollup"]
     },
     {
       "key": "devops",

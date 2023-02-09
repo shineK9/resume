@@ -64,6 +64,15 @@ function print() {
         {{ i || "todo..." }}
       </li>
     </ul>
+    <h3 header inline-block>技术栈</h3>
+    <div flex flew-row flex-wrap>
+      <ul p-0 pl-4 my-1 w-25 sm:w-35 v-for="stk in stack" :key="stk.key">
+        <div style="margin-left: -1rem;">{{ stk.label }}</div>
+        <li my-1 text-slate-500 v-for="i in stk.items" :key="i">
+          {{ i || "todo..." }}
+        </li>
+      </ul>
+    </div>
     <h3 header inline-block>工作经历</h3>
     <div v-for="(work, i) in work_experience" :key="i" mb-4>
       <h4 m-0>
@@ -85,15 +94,7 @@ function print() {
         </li>
       </ul>
     </div>
-    <h3 header inline-block>技术栈</h3>
-    <div flex flew-row flex-wrap>
-      <ul p-0 pl-4 my-1 w-25 sm:w-35 v-for="stk in stack" :key="stk.key">
-        <div style="margin-left: -1rem;">{{ stk.label }}</div>
-        <li my-1 text-slate-500 v-for="i in stk.items" :key="i">
-          {{ i || "todo..." }}
-        </li>
-      </ul>
-    </div>
+   
     <section>
       <h3 inline-block>教育经历</h3>
       <div v-for="education in educations" :key="education.academy_name">

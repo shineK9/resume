@@ -7,7 +7,6 @@ const {
   work_experience,
   abilities,
   about,
-  stack,
 } = resume;
 
 function print() {
@@ -19,7 +18,7 @@ function print() {
     card
     style="
       font-family: Noto Sans Traditional Chinese, sans-serif;
-      font-weight: 300;
+      font-weight: 400;
     "
     lg:w-240
     m-auto
@@ -64,7 +63,7 @@ function print() {
         {{ i || "todo..." }}
       </li>
     </ul>
-    <h3 header inline-block>技术栈</h3>
+    <!-- <h3 header inline-block>技术栈</h3>
     <div flex flew-row flex-wrap>
       <ul p-0 pl-4 my-1 w-25 sm:w-35 v-for="stk in stack" :key="stk.key">
         <div style="margin-left: -1rem;">{{ stk.label }}</div>
@@ -72,7 +71,7 @@ function print() {
           {{ i || "todo..." }}
         </li>
       </ul>
-    </div>
+    </div> -->
     <h3 header inline-block>工作经历</h3>
     <div v-for="(work, i) in work_experience" :key="i" mb-4>
       <h4 m-0>
@@ -126,11 +125,11 @@ body {
 }
 
 [card] {
-  border-style: solid;
-  @apply border-gray-300 border p-6 px-10 rounded bg-white;
-  &:hover {
-    @apply shadow-lg;
-  }
+  // border-style: solid;
+  // @apply border-gray-300 border p-6 px-10 rounded bg-white;
+  // &:hover {
+  //   @apply shadow-lg;
+  // }
 }
 
 @media (max-width: 500px) {
@@ -144,6 +143,6 @@ h4 {
 }
 
 p {
-  margin: 0.6em 0;
+  margin: 0.4em 0;
 }
 </style>

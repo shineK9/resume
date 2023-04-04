@@ -18,8 +18,7 @@ export default defineNuxtConfig({
       "@nuxtjs/google-fonts",
       {
         families: {
-          Roboto: true,
-          "Josefin+Sans": true,
+          "Noto+Sans+SC": true,
         },
       },
     ],

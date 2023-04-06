@@ -1,18 +1,8 @@
 <script lang="ts" setup>
 import resume from "./resume.json";
-const {
-  online_url,
-  educations,
-  personal_info,
-  work_experience,
-  abilities,
-  about,
-} = resume;
-
-function print() {
-  window.print();
-}
+const { educations, personal_info, work_experience, abilities, about } = resume;
 </script>
+
 <template>
   <main
     card
@@ -93,7 +83,7 @@ function print() {
         </li>
       </ul>
     </div>
-   
+
     <section>
       <h3 inline-block>教育经历</h3>
       <div v-for="education in educations" :key="education.academy_name">
